@@ -1285,7 +1285,7 @@ function getConfig(userIDs, hostName, proxyIP) {
   </html>`;
 }
 
-const HttpPort = new Set([80, 8080, 8880, 2052, 2086, 2095, 2082]);
+const HttpPort = new Set([80,]);
 const HttpsPort = new Set([443, 8443, 2053, 2096, 2087, 2083]);
 
 /**
