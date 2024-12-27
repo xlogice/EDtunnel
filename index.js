@@ -1285,8 +1285,8 @@ function getConfig(userIDs, hostName, proxyIP) {
   </html>`;
 }
 
-const HttpPort = new Set([80,]);
-const HttpsPort = new Set([443, 8443, 2053, 2096, 2087, 2083]);
+const HttpPort = new Set([80]);
+const HttpsPort = new Set([443]);
 
 /**
  * Generates subscription content.
@@ -1300,6 +1300,7 @@ function GenSub(userID_path, hostname, proxyIP) {
 	const mainDomains = new Set([
 		hostname,
 		// public domains
+		'ip.sb'
 		'icook.hk',
 		'japan.com',
 		'malaysia.com',
@@ -1311,11 +1312,8 @@ function GenSub(userID_path, hostname, proxyIP) {
 		'www.whatismyip.com',
 		'www.ipget.net',
 		// 高频率更新
-		'speed.marisalnc.com',           // 1000ip/3min
 		'freeyx.cloudflare88.eu.org',    // 1000ip/3min
 		'cloudflare.182682.xyz',         // 15ip/15min
-		// '115155.xyz',                    // 18ip/1小时
-		// 'cdn.2020111.xyz',               // 15ip/10min
 		'cfip.cfcdn.vip',                // 6ip/1天
 		proxyIPs,
 		// 手动更新和未知频率
@@ -1323,10 +1321,8 @@ function GenSub(userID_path, hostname, proxyIP) {
 		'cloudflare-ip.mofashi.ltd',     // 未知频率
 		'cf.090227.xyz',                 // 未知频率
 		'cname.xirancdn.us',             // 未知频率
-		// 'f3058171cad.002404.xyz',        // 未知频率
 		'cf.zhetengsha.eu.org',          // 未知频率
 		'cloudflare.9jy.cc',             // 未知频率
-		// '8.889288.xyz',                  // 未知频率
 		'cf.zerone-cdn.pp.ua',           // 未知频率
 		'cfip.1323123.xyz',              // 未知频率
 		'cdn.tzpro.xyz',                 // 未知频率
