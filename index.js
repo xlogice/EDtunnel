@@ -1300,7 +1300,7 @@ function GenSub(userID_path, hostname, proxyIP) {
 	const mainDomains = new Set([
 		hostname,
 		// public domains
-		'ip.sb'
+		'ip.sb',
 		'icook.hk',
 		'japan.com',
 		'malaysia.com',
